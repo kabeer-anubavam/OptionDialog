@@ -1,0 +1,18 @@
+var style = require('lib/style');
+var config = require('config');
+var icons = require('icons');
+
+exports.getOptionDialog = function(args) {
+	var opts = {
+		selectedIndex : 0,
+		options : args.pickerData
+	};
+
+	if (args.title) {
+		opts.title = args.title;
+	}
+
+	var optDialog = Ti.UI.createOptionDialog(opts);
+
+	return optDialog;
+};
