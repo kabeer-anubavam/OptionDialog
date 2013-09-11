@@ -20,20 +20,6 @@ var genericWindow = function(args) {
 	navBar.add(headerTitle);
 	win.add(navBar);
 
-	if (args.back) {
-		var leftNavView = Ti.UI.createView(style.leftNavButton);
-		navBar.add(leftNavView);
-
-		var backButton = Ti.UI.createImageView({
-			image : icons.backButton
-		});
-		leftNavView.add(backButton);
-
-		leftNavView.addEventListener('click', function(e) {
-			win.close();
-		});
-	}
-
 	return win;
 };
 
