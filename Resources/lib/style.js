@@ -28,20 +28,6 @@ var style = {
 		ellipsize : true,
 		textAlign : 'center'
 	},
-	titleLabelStyle : {
-		top : '15dp',
-		font : {
-			fontFamily : "Arial",
-			fontWeight : 'bold',
-			fontSize : '20dp'
-		},
-		color : '#000000',
-		width : '230dp',
-		height : '30dp',
-		wordWrap : false,
-		ellipsize : true,
-		textAlign : 'center'
-	},
 	addEventTextLabel : {
 		width : "41%",
 		left : '0dp',
@@ -117,7 +103,6 @@ var style = {
 		height : Ti.UI.SIZE,
 		layout : 'horizontal'
 	},
-
 	horizontalView : {
 		width : Ti.UI.SIZE,
 		height : Ti.UI.SIZE,
