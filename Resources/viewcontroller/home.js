@@ -886,12 +886,10 @@ function viewController(args) {
 	};
 
 	if (config.platform == config.ANDROID) {
-		areaPickerView = require('lib/views').getOptionDialog({
-			pickerData : areaData
-		});
+		areaPickerView = require('lib/views').getOptionDialog(areaData);
 		areaPickerView.selectedIndex = (areaSelectedID) ? areaSelectedID : 0;
-		areaPickerView.show();
-		areaPickerView.hide();
+		// areaPickerView.show();
+		// areaPickerView.hide();
 		areaPickerView.addEventListener('click', function(e) {
 
 			if (e.index > 0) {
@@ -960,12 +958,10 @@ function viewController(args) {
 	}
 
 	if (config.platform == config.ANDROID) {
-		streetPickerView = require('lib/views').getOptionDialog({
-			pickerData : streetData
-		});
+		streetPickerView = require('lib/views').getOptionDialog(streetData);
 		streetPickerView.selectedIndex = (streetSelectedID) ? streetSelectedID : 0;
-		streetPickerView.show();
-		streetPickerView.hide();
+		// streetPickerView.show();
+		// streetPickerView.hide();
 	}
 
 	streetDropDownView.addEventListener('click', function(e) {
@@ -1038,12 +1034,10 @@ function viewController(args) {
 	var pickerOnePickerView;
 
 	if (config.platform == config.ANDROID) {
-		pickerOnePickerView = require('lib/views').getOptionDialog({
-			pickerData : pickerOneData
-		});
+		pickerOnePickerView = require('lib/views').getOptionDialog(pickerOneData);
 		pickerOnePickerView.selectedIndex = (pickerOneSelectedID) ? pickerOneSelectedID : 0;
-		pickerOnePickerView.show();
-		pickerOnePickerView.hide();
+		// pickerOnePickerView.show();
+		// pickerOnePickerView.hide();
 		pickerOnePickerView.addEventListener('click', function(e) {
 			if (e.index >= 0) {
 				pickerOneTextBox.text = pickerOneData[e.index].title;
@@ -1173,12 +1167,10 @@ function viewController(args) {
 	var pickerTwoPickerView;
 
 	if (config.platform == config.ANDROID) {
-		pickerTwoPickerView = require('lib/views').getOptionDialog({
-			pickerData : pickerTwoData
-		});
+		pickerTwoPickerView = require('lib/views').getOptionDialog(pickerTwoData);
 		pickerTwoPickerView.selectedIndex = (pickerTwoSelectedID) ? pickerTwoSelectedID : 0;
-		pickerTwoPickerView.show();
-		pickerTwoPickerView.hide();
+		// pickerTwoPickerView.show();
+		// pickerTwoPickerView.hide();
 		pickerTwoPickerView.addEventListener('click', function(e) {
 			if (e.index >= 0) {
 				pickerTwoTextBox.text = pickerTwoData[e.index].title;
@@ -1251,12 +1243,10 @@ function viewController(args) {
 	var pickerThreePickerView;
 
 	if (config.platform == config.ANDROID) {
-		pickerThreePickerView = require('lib/views').getOptionDialog({
-			pickerData : pickerThreeData
-		});
+		pickerThreePickerView = require('lib/views').getOptionDialog(pickerThreeData);
 		pickerThreePickerView.selectedIndex = (pickerThreeSelectedID) ? pickerThreeSelectedID : 0;
-		pickerThreePickerView.show();
-		pickerThreePickerView.hide();
+		// pickerThreePickerView.show();
+		// pickerThreePickerView.hide();
 		pickerThreePickerView.addEventListener('click', function(e) {
 			if (e.index >= 0) {
 				pickerThreeTextBox.text = pickerThreeData[e.index].title;
@@ -1434,12 +1424,10 @@ function viewController(args) {
 	var pickerFourPickerView;
 
 	if (config.platform == config.ANDROID) {
-		pickerFourPickerView = require('lib/views').getOptionDialog({
-			pickerData : pickerFourData
-		});
+		pickerFourPickerView = require('lib/views').getOptionDialog(pickerFourData);
 		pickerFourPickerView.selectedIndex = (pickerFourSelectedID) ? pickerFourSelectedID : 0;
-		pickerFourPickerView.show();
-		pickerFourPickerView.hide();
+		// pickerFourPickerView.show();
+		// pickerFourPickerView.hide();
 		pickerFourPickerView.addEventListener('click', function(e) {
 			if (e.index >= 0) {
 				pickerFourTextBox.text = pickerFourData[e.index].title;
@@ -1500,12 +1488,10 @@ function viewController(args) {
 	var pickerFivePickerView;
 
 	if (config.platform == config.ANDROID) {
-		pickerFivePickerView = require('lib/views').getOptionDialog({
-			pickerData : pickerFiveData
-		});
+		pickerFivePickerView = require('lib/views').getOptionDialog(pickerFiveData);
 		pickerFivePickerView.selectedIndex = (pickerFiveSelectedID) ? pickerFiveSelectedID : 0;
-		pickerFivePickerView.show();
-		pickerFivePickerView.hide();
+		// pickerFivePickerView.show();
+		// pickerFivePickerView.hide();
 		pickerFivePickerView.addEventListener('click', function(e) {
 			if (e.index >= 0) {
 				pickerFiveTextBox.text = pickerFiveData[e.index].title;
@@ -1593,12 +1579,10 @@ function viewController(args) {
 	var pickerSixPickerView;
 
 	if (config.platform == config.ANDROID) {
-		pickerSixPickerView = require('lib/views').getOptionDialog({
-			pickerData : pickerSixData
-		});
+		pickerSixPickerView = require('lib/views').getOptionDialog(pickerSixData);
 		pickerSixPickerView.selectedIndex = (pickerSixSelectedID) ? pickerSixSelectedID : 0;
-		pickerSixPickerView.show();
-		pickerSixPickerView.hide();
+		// pickerSixPickerView.show();
+		// pickerSixPickerView.hide();
 		pickerSixPickerView.addEventListener('click', function(e) {
 			if (e.index >= 0) {
 				pickerSixTextBox.text = pickerSixData[e.index].title;

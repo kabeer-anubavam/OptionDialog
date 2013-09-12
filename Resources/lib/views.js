@@ -5,12 +5,8 @@ var icons = require('icons');
 exports.getOptionDialog = function(args) {
 	var opts = {
 		selectedIndex : 0,
-		options : args.pickerData
+		options : args
 	};
-
-	if (args.title) {
-		opts.title = args.title;
-	}
 
 	var optDialog = Ti.UI.createOptionDialog(opts);
 
